@@ -1,0 +1,53 @@
+@mixin nav-list {
+    display: flex;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+body {
+    font-size: 1.6rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-logo {
+        width: 18rem;
+    }
+    
+    nav  {
+        ul {
+            @include nav-list;
+            list-style-type: none;
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 1rem 3rem;
+                border-right: 1px solid black;
+                &:hover {
+                    color: lighten($color: black, $amount: 50%);
+                }
+            }
+        }
+    }
+    
+    
+    #social-media {
+        @include nav-list;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        .social-media-logo {
+            width: 4rem;
+        }
+    }
+}
+
+

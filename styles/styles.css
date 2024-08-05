@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-logo {
+  width: 18rem;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-right: 1px solid black;
+}
+header nav ul a:hover {
+  color: gray;
+}
+header #social-media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+header #social-media .social-media-logo {
+  width: 4rem;
+}/*# sourceMappingURL=styles.css.map */
