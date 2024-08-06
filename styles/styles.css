@@ -3,27 +3,34 @@ html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
+  background-color: #ddd;
 }
 
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ddd;
+  width: 100vw;
 }
 header .main-logo {
-  width: 18rem;
+  height: 14rem;
 }
 header nav ul {
   display: flex;
   list-style-type: none;
 }
 header nav ul a {
+  font-size: 2rem;
   color: black;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -36,13 +43,14 @@ header #social-media {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
+  margin-right: 2rem;
 }
 header #social-media .social-media-logo {
   width: 4rem;
 }
 
 .hero {
-  position: relative;
+  margin-top: 14rem;
   width: 100%;
   height: 70vh; /* Utilise la hauteur de la vue pour remplir l'écran */
   background-image: url(../images/hero-pizza-hand.jpg); /* Remplace 'ton-image.jpg' par le chemin de ton image */
@@ -54,6 +62,7 @@ header #social-media .social-media-logo {
   justify-content: center; /* Centre le contenu horizontalement */
   color: white; /* Exemple de couleur de texte */
   text-align: center; /* Centre le texte */
+  margin-bottom: 50px;
 }
 
 .hero-content {
@@ -67,7 +76,9 @@ header #social-media .social-media-logo {
 }
 .hero-content h1 {
   font-size: 8rem;
+  font-family: "Playfair Display", serif;
   align-content: center;
+  text-transform: uppercase;
 }
 .hero-content .booking-button {
   background-color: rgba(75, 74, 74, 0.208);
@@ -86,4 +97,40 @@ header #social-media .social-media-logo {
 }
 .hero-content h2 {
   font-size: 4rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+#about-us article {
+  background-color: white;
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: 0px 10px 15px gray;
+}
+#about-us article h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#about-us aside {
+  display: flex;
+  border-radius: 0 30px 30px 0;
+  background-color: white;
+  box-shadow: 0px 10px 15px gray;
+}
+#about-us aside img {
+  width: 100%;
+  border-radius: 0 30px 30px 0;
 }/*# sourceMappingURL=styles.css.map */
